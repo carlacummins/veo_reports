@@ -21,16 +21,16 @@ sh generate_VEO_report.sh Report100 2021-06-14:2021-07-10
 
 ## Description of outputs
 
-### Metadata dumps
+#### Metadata dumps
 - `all_metadata.post_2022.csv` : all metadata pulled from the BigQuery db
 - `all_metadata.csv` : concatenation of `all_metadata.pre_2022.csv` and `all_metadata.post_2022.csv`
 - `reads.ena_as.custom_fields.tsv` : ENA Advanced Search output - all SARS-CoV-2 read metadata to date 
 
-# Summary files 
+#### Summary files 
 - `VEO_report.sql` : SQL file to load all metadata into an SQLite db, format it and produce summaries required downstream
 - `sqlite_db` : a copy of the above database - can be loaded/manipulated at a later date to produce additional stats
 - `report_text.txt` : a 'page-by-page' of all the stats that need to be updated as standard in each VEO report
 - `counts_per_*.tsv` : summaries required as input for generating figures
 
-# Figures
+#### Figures
 Each of the 3 figures are provided as a subdirectory of individual parts, along with a `.png` image of all parts stitched together
