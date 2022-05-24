@@ -4,6 +4,8 @@
 
 - [SQLite](https://www.sqlite.org/index.html) required for generating report summaries
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk#installing_the_latest_version) required for querying BigQuery database
+    - initialise with project `prj-int-dev-covid19-nf-gls`
+    - you can skip setting default zones as these are only relevant if using compute
 - Several python modules required:
 ```
 pip install -r requirements.txt
