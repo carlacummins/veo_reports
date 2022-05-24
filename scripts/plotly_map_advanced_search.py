@@ -58,7 +58,7 @@ if opts.date_range:
     date_type = opts.date_type
 
 # load set of polygons for each country
-geojson_path = "{0}/{1}".format("/".join(os.path.realpath(__file__).split('/')[:-1]), 'custom_with_ids.geo.json')
+geojson_path = "{0}/{1}".format("/".join(os.path.realpath(__file__).split('/')[:-2]), 'assets/custom_with_ids.geo.json')
 with open(geojson_path) as json_file:
     countries = json.load(json_file)
 
