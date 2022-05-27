@@ -14,7 +14,7 @@ def add_margin(pil_img, top, right, bottom, left, color):
 def annotate(img_raw, text):
     img = add_margin(img_raw, 0, 5, 0, 50, (255,255,255))
     img_draw = ImageDraw.Draw(img)
-    fnt = ImageFont.truetype("../assets/arial.ttf", 40)
+    fnt = ImageFont.truetype("assets/arial.ttf", 40)
     img_draw.text((5,10), text, (0, 0, 0), font=fnt)
     return img
 
